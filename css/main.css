@@ -1,0 +1,170 @@
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* banner */
+#header_scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: line-height 0.5s;
+    line-height: 100px;
+    z-index: 999;
+}
+
+#header_scroll h1 {
+    font-size: 0;
+}
+
+#header_scroll.on {
+    background: #fff;
+    line-height: 70px;
+
+}
+
+#header_scroll img {
+    height: 70px;
+    transition: 0.5s;
+}
+
+#header_scroll.on img {
+    height: 40px;
+}
+
+#header_scroll .inner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#header_scroll nav>ul {
+    display: flex;
+    gap: 60px;
+}
+
+#header_scroll nav>ul>li {
+    position: relative;
+}
+
+
+
+#header_scroll nav>ul>li a {
+    display: block;
+    text-align: center;
+}
+
+#header_scroll nav>ul>li .smenu {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    background: #fff;
+    border: 2px solid #555;
+    line-height: 35px;
+    width: 130px;
+    transform: translate(-50%, 0);
+    display: none;
+    border-radius: 10px;
+}
+
+#header_scroll nav>ul>li .smenu::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #555;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+#header_scroll nav>ul>li:hover .smenu {
+    display: block;
+}
+
+
+#header_scroll nav>ul>li .smenu li {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+}
+
+#header_scroll .link {
+    position: relative;
+    top: 0;
+    right: -250px;
+}
+
+#header_scroll .link i {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 5px;
+
+}
+
+
+
+
+/* mainSlide */
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .mainSlide .itm {
+    position: relative;
+    height: 1000px;
+    width: 500px;
+
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/mainbn3_slide_01_1226.png);
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/mainbn3_slide_02_1226.png);
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/mainbn3_slide_03_1226.png);
+}
+
+.mainVisual .mainSlide .itm04 {
+    background: url(../img/mainbn3_slide_04_1226.png);
+}
+
+.mainVisual .main_slide_dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    gap: 10px;
+
+}
+
+.mainVisual .main_slide_dots li button {
+    background: #777;
+    color: #fff;
+    padding: 5px;
+    font-size: 13px;
+    border-radius: 50%;
+    border: 1px;
+}
+
+.mainVisual .main_slide_dots li.on button {
+    background: tomato;
+}
+
+
+
+/* mainContent */
+.mainContent {
+    position: relative;
+    height: 1100px;
+    background: rgb(240, 212, 180, 0.5);
+}

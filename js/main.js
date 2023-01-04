@@ -1,19 +1,6 @@
-$(window).on('scroll', function () {
-    console.log('스크롤', $(window).scrollTop());
-    if ($(window).scrollTop() > 0) {
-        $('#header_scroll').addClass('on');
-    }
-    else {
-        $('#header_scroll').removeClass('on');
-    }
 
 
-    $('.mainSlide').slick({
-        arrows: false,
-        autoplay: true,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-    });
+$(function () {
 
     $('.mainSlide').on('init afterChange', function (e, s, c) {
         //c = 0,1,2
@@ -23,6 +10,12 @@ $(window).on('scroll', function () {
         $('.mainVisual .main_slide_dots li').eq(c ? c : 0).addClass('on');
     });
 
+    $('.mainSlide').slick({
+        arrows: false,
+        autoplay: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+    });
     $('.mainVisual .main_slide_dots button').on('click', function () {
         var idx = $(this).parent().index();
         $('.mainSlide').slick('slickGoTo', idx);
@@ -35,7 +28,22 @@ $(window).on('scroll', function () {
     });
 
 
-});
+    // 스크롤 이벤트
+
+    $(window).on('scroll', function () {
+        console.log('스크롤', $(window).scrollTop());
+        if ($(window).scrollTop() > 0) {
+            $('#header_scroll').addClass('on');
+        }
+        else {
+            $('#header_scroll').removeClass('on');
+        }
+
+    });
+
+})
+
+
 
 
 

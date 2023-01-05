@@ -165,7 +165,7 @@
 }
 
 .mainVisual .main_slide_dots li.on button {
-    background: tomato;
+    background: hsl(36, 71%, 64%);
 }
 
 
@@ -242,7 +242,7 @@
 }
 
 .mainEvent .mc {
-    color: tomato;
+    color: hsl(36, 56%, 59%);
     font-size: 30px;
 }
 
@@ -278,24 +278,6 @@
 
 
 
-/* mainPromotion */
-/* .mainPromotion {
-    position: relative;
-    height: 900px;
-    width: 100%;
-    background: #fff;
-}
-
-.mainPromotion .movie {
-    position: relative;
-}
-
-
-.mainPromotion video {
-    width: 100%;
-    border-radius: 30px;
-    margin: 200px 0;
-} */
 
 
 
@@ -304,15 +286,14 @@
 
 /* mainProduct */
 .mainProduct {
-    position: relative;
-    height: 1000px;
-    width: 100%;
+    padding: 100px 0;
+    background: #fff;
 }
 
 .mainProduct h2 {
     font-size: 28px;
     font-weight: 700;
-    padding: 120px 0 30px 0;
+    padding: 50px 0 30px 0;
     text-align: center;
     text-transform: uppercase;
 }
@@ -334,12 +315,272 @@
     line-height: 25px;
 }
 
+.mainProduct strong {
+    display: block;
+    margin: 20px 0 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.mainProduct .buy {
+    display: inline-block;
+    padding: 5px 25px;
+    background: #333;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.mainProduct .buy:hover {
+    background: hsl(36, 71%, 64%);
+    color: #fff;
+}
+
 .mainProduct .inner {
     display: flex;
     gap: 30px;
 
 }
 
+.mainProduct .inner figure {
+    flex: 1;
+    text-align: center;
+}
+
+.mainProduct figure img {
+    width: 100%;
+}
+
 .mainProduct .inner img {
     border-radius: 30px;
+}
+
+.mainProduct .img_box .service {
+    position: relative;
+    top: 0;
+    right: 0;
+    background: transparent;
+    color: #333;
+    height: 100%;
+    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 5px;
+    font-size: 25px;
+
+    transition: 0.5s;
+    opacity: 0;
+
+}
+
+.mainProduct .img_box:hover .service {
+    top: -50px;
+    right: 0;
+    opacity: 1;
+
+}
+
+.mainProduct .img_box img {
+    transition: 0.5s;
+}
+
+.mainProduct .img_box:hover img {
+    transform: translate(0, 70px);
+}
+
+.mainProduct .img_box i {
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 2px 0;
+
+}
+
+
+
+
+
+
+
+
+/* mainYoutubeBg */
+
+.mainYoutubeBg {
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+
+.mainYoutubeBg i {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.sec .tit {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec .tit h2 {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    margin: 40px 0 10px 0;
+}
+
+.sec .tit .tit_dec {
+    display: block;
+    font-size: 14px;
+    margin: 20px 0 50px 0;
+    word-break: keep-all;
+    line-height: 24px;
+}
+
+
+
+
+
+
+
+/* mainPromotion*/
+
+.mainPromotion .promotion_slide {
+    margin: 0 -15px;
+}
+
+.mainPromotion figure {
+    position: relative;
+    margin: 0 15px;
+}
+
+.mainPromotion figure .case {
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.mainPromotion figure .order_btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+
+.mainPromotion figure:hover .order_btn {
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 95px;
+    left: 108px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #fff;
+    padding: 30px 0 0 0;
+}
+
+.mainPromotion .promotion_slide_controller {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.mainPromotion .promotion_slide_controller ul {
+    display: flex;
+    gap: 2px;
+}
+
+.mainPromotion .promotion_slide_controller ul button {
+    padding: 3px;
+    background: #555;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+
+}
+
+.mainPromotion .promotion_slide_controller .btn_o {
+    background: #fff;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+/* mainCustomer 작업해야함 */
+.mainCustomer .main_tab_menu {
+    display: flex;
+    gap: 1px;
+}
+
+.mainCustomer .flex_inner {
+    gap: 50px;
+}
+
+.mainCustomer .main_tab_menu>li {
+    flex: 1;
+}
+
+
+.mainCustomer .main_tab_menu>li button {
+    display: block;
+    width: 100%;
+    background: hsl(36, 56%, 59%);
+    color: #fff;
+    line-height: 40px;
+
+    border: none;
+    text-align: center;
+}
+
+.mainCustomer .main_tab_menu>li.on button {
+    background: #333247;
+}
+
+.mainCustomer .main_tab_content>li {
+    display: none;
+}
+
+.mainCustomer .main_tab_content>li.on {
+    display: block;
+}
+
+.mainCustomer .main_tab_content .content li {
+    display: flex;
+    gap: 20px;
+    padding: 0 2px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.mainCustomer .left {
+    overflow: hidden;
+}
+
+.mainCustomer .main_tab_content .content a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

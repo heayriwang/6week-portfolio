@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
     <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
 </head>
@@ -93,7 +95,12 @@
 
 
 
+
+
+
     <main>
+
+
 
         <!-- mainSlide -->
         <section class="mainVisual">
@@ -110,6 +117,11 @@
                 <li><button class="btn_o">04</button></li>
             </ul>
         </section>
+
+
+
+
+
 
         <!-- mainContent -->
         <section class="mainContent">
@@ -140,6 +152,14 @@
             </div>
         </section>
 
+
+
+
+
+
+
+
+        <!-- mainEvent -->
         <section class="mainEvent">
             <h2 data-aos="fade-right" data-aos-duration="1000"><span class="mc"> To be with our pets for a long time
                 </span>우리 곁에서 더 오래 함께하길 바라는
@@ -167,17 +187,12 @@
             </div>
         </section>
 
-        <!-- <section class="mainPromotion">
-            <div class="flex_inner">
-                <div class="movie">
-                    <video src="./img/movie.mp4" autoplay muted loop playsinline></video>
-                </div>
-        </section> -->
 
 
 
 
 
+        <!-- mainProduct -->
         <section class="mainProduct">
             <h2 data-aos="fade-right" data-aos-duration="1000"><span> HOT CLIP
                 </span>ONLINE STORE</h2>
@@ -187,51 +202,51 @@
             <div class="inner">
                 <figure>
                     <div class="img_box">
-                        <img src="./img/mainbn3_08_1220.jpg" alt="">
+                        <img data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                            src="./img/mainbn3_08_1220.jpg" alt="">
                         <div class="service">
-                            <i class="xi-cart-o"></i>
-
-                            <i class="xi-heart-o"></i>
+                            <a href="#!"><i class="xi-cart-o"></i></a>
+                            <a href="#!"><i class="xi-heart-o"></i></a>
                         </div>
                     </div>
-                    <strong>pandora </strong>
-                    <a href="#!">BUY</a>
+                    <strong>방짜볼</strong>
+                    <a class="buy" href="#!">BUY</a>
                 </figure>
                 <figure>
                     <div class="img_box">
-                        <img src="./img/mainbn3_09_1220.jpg" alt="">
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                            src="./img/mainbn3_09_1220.jpg" alt="">
                         <div class="service">
-                            <i class="xi-cart-o"></i>
-
-                            <i class="xi-heart-o"></i>
+                            <a href="#!"><i class="xi-cart-o"></i></a>
+                            <a href="#!"><i class="xi-heart-o"></i></a>
                         </div>
                     </div>
-                    <strong>taylor </strong>
-                    <a href="#!">BUY</a>
+                    <strong>라일락</strong>
+                    <a class="buy" href="#!">BUY</a>
                 </figure>
                 <figure>
                     <div class="img_box">
-                        <img src="./img/mainbn3_10_1106.jpg" alt="">
+                        <img data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                            src="./img/mainbn3_10_1106.jpg" alt="">
                         <div class="service">
-                            <i class="xi-cart-o"></i>
-
-                            <i class="xi-heart-o"></i>
+                            <a href="#!"><i class="xi-cart-o"></i></a>
+                            <a href="#!"><i class="xi-heart-o"></i></a>
                         </div>
                     </div>
-                    <strong>solid</strong>
-                    <a href="#!">BUY</a>
+                    <strong>정수반</strong>
+                    <a class="buy" href="#!">BUY</a>
                 </figure>
                 <figure>
                     <div class="img_box">
-                        <img src="./img/mainbn3_11_1106.jpg" alt="">
+                        <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                            src="./img/mainbn3_11_1106.jpg" alt="">
                         <div class="service">
-                            <i class="xi-cart-o"></i>
-
-                            <i class="xi-heart-o"></i>
+                            <a href="#!"><i class="xi-cart-o"></i></a>
+                            <a href="#!"><i class="xi-heart-o"></i></a>
                         </div>
                     </div>
-                    <strong>woody</strong>
-                    <a href="#!">BUY</a>
+                    <strong>정반상</strong>
+                    <a class="buy" href="#!">BUY</a>
                 </figure>
         </section>
 
@@ -240,6 +255,265 @@
 
 
 
+        <!-- mainYoutubeBg -->
+        <section class="mainYoutubeBg sec">
+            <div class="tit">
+                <h2>BEYOND NATURE</h2>
+                <strong class="tit_dec">
+                    Premium Pet Supplies</strong>
+            </div>
+            <div id="bgndVideo" class="player"></div>
+        </section>
+
+
+
+
+
+
+
+        <!-- mainPromotion AOS 삽입하기-->
+        <section class="mainPromotion sec">
+            <div class="tit">
+                <h2>BEST COLLECTION EVENT</h2>
+                <strong class="tit_dec">장수연구소의 첫번째 제품은 반려동물의 생활에 있어 가장 중요한 부분 중 하나인 식사시간이 무엇보다도 건강하고 행복했으면 하는 바램에서
+                    시작되었습니다.</strong>
+                <div class="inner">
+                    <div class="promotion_slide">
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo.png" alt="">
+                                </div>
+                                <div class="dec">정반상 </div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo02.png" alt="">
+                                </div>
+                                <div class="dec">정반상 트레이</div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo03.png" alt="">
+                                </div>
+                                <div class="dec">정수반 트레이 </div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo04.jpg" alt="">
+                                </div>
+                                <div class="dec">방짜볼 </div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo05.jpg" alt="">
+                                </div>
+                                <div class="dec">정수반 유기그릇 </div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo06.jpg" alt="">
+                                </div>
+                                <div class="dec">정수반</div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo07.jpg" alt="">
+                                </div>
+                                <div class="dec">라일락 세트 </div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="">
+                                <div class="case">
+                                    <img src="./img/photo08.jpg" alt="">
+                                </div>
+                                <div class="dec">라일락 월넛 트레이</div>
+                                <button class="order_btn">자세히보기</button>
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="promotion_slide_controller">
+                        <button class="btn_o">
+                            <i class="xi-angle-left"></i>
+                        </button>
+                        <ul class="slide_dots">
+                            <li><button>01</button></li>
+                            <li><button>02</button></li>
+                            <li><button>03</button></li>
+                            <li><button>04</button></li>
+                            <li><button>05</button></li>
+                            <li><button>06</button></li>
+                            <li><button>07</button></li>
+                            <li><button>08</button></li>
+                        </ul>
+                        <button class="btn_o">
+                            <i class="xi-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- mainCustomer 작업해야함 -->
+        <section class="mainCustomer sec mbg">
+            <div class="flex_inner">
+                <div class="left">
+                    <div class="mainTab">
+                        <ul class="main_tab_menu">
+                            <li class="on"><button class="btn_o">COMMUNITY</button></li>
+                            <li><button class="btn_o">CENTER</button></li>
+                            <li><button class="btn_o">EVENT</button></li>
+                        </ul>
+                        <ul class="main_tab_content">
+                            <li class="on">
+                                <ul class="content">
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.
+                                            elit.</a><span>[2023.01.03]</span></li>
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">'장수연구소는 제품의 디자인부터 제작까지 모두 국내에서 직접 생산하고 있습니다'
+                                            원목가구는 장수연구소 자체 공방에서 목공 전문가가 모두 수작업으로 제작하고 있으며 유기그릇은 디자인은 장수연구소에서, 생산은 광명유기의
+                                            명인의 손을 거쳐 제작되고 있습니다.</a><span>[2023.01.03]</span>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="content">
+                                    <li><a href="#!">02 . Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span></li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="content">
+                                    <li><a href="#!">03 . Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span></li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                    <li><a href="#!">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem,
+                                            ipsum dolor sit amet consectetur adipisicing
+                                            elit.</a><span>[2023.01.03]</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="resposive_case">
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1672704771817"
+                            class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        <!--
+2. 설치 스크립트
+* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script"
+                            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp": "1672704771817",
+                                "key": "2d9mz",
+                                //"mapWidth": "640",
+                                //"mapHeight": "360"
+                            }).render();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 

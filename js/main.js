@@ -1,6 +1,18 @@
 
 
 $(function () {
+
+
+    // popup
+    $('.popup button').on('click', function () {
+        console.log($(this).parent());
+        //$('.popup').hide();
+        $(this).parent().hide();
+    });
+
+
+
+
     $('.mainSlide').on('init afterChange', function (e, s, c) {
         //c = 0,1,2
         var current = $('.mainSlide .slick-current');
@@ -27,6 +39,13 @@ $(function () {
     });
 
 
+
+
+
+
+
+
+
     // 스크롤 이벤트
 
     $(window).on('scroll', function () {
@@ -40,6 +59,13 @@ $(function () {
 
     });
 
+
+
+
+
+
+
+    // bgndVideo
     $("#bgndVideo").YTPlayer({
         videoURL: 'j6TUohZvcPg',
         containment: '.mainYoutubeBg',
@@ -60,6 +86,11 @@ $(function () {
             }
         ]
     });
+
+
+
+
+
     $('.promotion_slide_controller>button:first-child').on('click', function () {
         $('.promotion_slide').slick('slickPrev')
     });
@@ -82,6 +113,13 @@ $(function () {
         $(this).parent().addClass('on');
     });
 
+
+
+
+
+
+
+    // toTop
     $(window).on('scroll', function () {
         var scr = $(window).scrollTop();
         if (scr > 300) {
@@ -92,8 +130,10 @@ $(function () {
 
 
     });
-
     $('#toTop').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 2000)
     });
+
+
+
 })
